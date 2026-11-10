@@ -1,30 +1,29 @@
-// Main pages migrated October 22, 2026. Detail/resource URLs verified in Wix navigation.
-const wix = "https://www.dstmonroealumnae.org";
+// All chapter destinations are local. Only national/regional sites remain external.
 export const destinations = {
-  home: "/", about: "/about-us", programs: "/programs",
-  gallery: "/gallery", membership: "/membership", contact: `${wix}/contact`,
+  home: "/", about: "/about-us", eboard: "/about-us/eboard", programs: "/programs",
+  gallery: "/gallery", membership: "/membership", contact: "/contact",
   national: "https://www.deltasigmatheta.org/",
   region: "https://www.dstsouthwes.org/",
 };
 export type NavigationItem = { label: string; href: string; children?: { label: string; href: string }[] };
 export const navigation: NavigationItem[] = [
   { label: "Home", href: destinations.home },
-  { label: "About us", href: destinations.about, children: [{ label: "Our chapter & history", href: destinations.about }] },
+  { label: "About us", href: destinations.about, children: [{ label: "Our chapter & history", href: destinations.about }, { label: "Meet Our Eboard", href: destinations.eboard }] },
   { label: "Programs & events", href: destinations.programs },
   { label: "Gallery", href: destinations.gallery },
   { label: "Membership", href: destinations.membership },
 ];
 
-// Existing detail pages stay available until their individual migration.
+// Public information and member guidance stay within this application.
 export const chapterResources = {
-  economic: `${wix}/projects-8`,
-  educational: `${wix}/copy-of-economic-development`,
-  international: `${wix}/copy-2-of-economic-development`,
-  health: `${wix}/copy-of-international-awareness-inv`,
-  political: `${wix}/copy-2-of-international-awareness-inv`,
-  arts: `${wix}/art-letters`,
-  scholarship: `${wix}/scholarship`,
-  deltaDears: `${wix}/delta-dears`,
-  membershipServices: `${wix}/membership-services`,
-  sororsOnly: `${wix}/sorors-only`,
+  "economic": "/programs/economic-development",
+  "educational": "/programs/educational-development",
+  "international": "/programs/international-awareness",
+  "health": "/programs/physical-mental-health",
+  "political": "/programs/political-awareness",
+  "arts": "/programs/arts-letters",
+  "scholarship": "/programs/scholarship",
+  "deltaDears": "/programs/delta-dears",
+  "membershipServices": "/membership/services",
+  "sororsOnly": "/membership/member-resources"
 };

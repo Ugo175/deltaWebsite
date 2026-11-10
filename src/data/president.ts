@@ -1,7 +1,9 @@
 // Transcribed from the chapter-provided welcome and verified published homepage.
 export const president = {
   name: "Dr. LaTina S. Johnson",
-  image: "/images/chapter-president.jpg",
+  image: "/images/eboard/dr-latina-s-johnson.png",
+  width: 1105,
+  height: 1423,
   greeting: "Greetings Sorors, Friends and Community!",
   paragraphs: [
     "On behalf of the Monroe Alumnae Chapter of Delta Sigma Theta Sorority, Inc., it gives me great honor and pleasure to welcome you to our official website. I greet you with enthusiasm as the 29th Chapter President. As a sisterhood founded on Christian principles, we are committed to public service through the implementation of programming that will impact the Monroe area and community.",

@@ -101,3 +101,36 @@ A clean temporary installation from the exact package lock passed ESLint and the
 The current production audit reports a critical Next.js advisory affecting the pinned 16.4.0 version, with 16.4.2 offered as the patch. The build initially stops to announce this advisory; the repeated build succeeds with a warning. Upgrade Next.js before public deployment. Advisories: https://github.com/advisories/GHSA-2464-fhr4-w9xw, https://github.com/advisories/GHSA-p3m5-59mp-jv5r, https://github.com/advisories/GHSA-673q-mjm6-r5xr. Dependencies were not upgraded as part of the content migration.
 
 The project installation now also passes ESLint and the repeated production build, including TypeScript. Regenerating the disposable `.next/dev` cache resolved timed-out Webpack cache reads in the preview. The refreshed development server remains on port 3000. Browser checks cover desktop and 390px mobile layouts, same-tab main navigation, gallery next/previous and wraparound, Escape closing, and focus return to the invoking thumbnail.
+
+## Independent chapter navigation (November 5, 2026)
+
+All chapter-page links now stay inside this Next.js application. Contact, the eight program detail pages, Membership Services, and member-resource guidance no longer navigate to Wix. National, regional, and social links remain intentional external links. The original Wix website, DNS, and domain settings are untouched; existing tabs or bookmarks on its domain still display that separate site.
+
+### New local routes
+
+- `/contact`: working email, telephone, mailing address, and local program/membership navigation. Email opens the visitor’s email application; there is no submission form or backend and no false delivery confirmation.
+- `/programs/[slug]`: eight statically generated pages defined in `src/data/program-details.ts`. The shared `ProgramDetailPage` renders content, program navigation, chapter contact links, and archival photographs. Unknown slugs return 404.
+- `/membership/services`: public committee information and historical photographs.
+- `/membership/member-resources`: public guidance to contact the chapter for access to member materials. No private Wix content, credentials, portal, or authentication has been recreated.
+
+`src/config/legacy-routes.ts` maps eleven legacy paths to local destinations using temporary 307 redirects in the new app only. These include `/portfolio`, `/projects-8`, `/scholarship`, and `/sorors-only`. Parent navigation stays highlighted on program/member subpages.
+
+### Content and source limits
+
+Original public pages were reviewed November 5, 2026. Existing program copy was summarized, and photographs/emblems were retained locally with source URLs recorded in `docs/program-detail-assets.json`. The old Economic Development and Arts & Letters copy was corroborated by the public page reader’s archived content; the live page bodies were empty when retrieved. Education, political awareness, scholarship, Delta DEARS, and membership services had readable public content. International Awareness and Physical & Mental Health returned no readable current program body, so their local pages explicitly request chapter contact for current details instead of inventing initiatives. Current chapter-approved copy is needed to complete those two program descriptions. No event dates, application deadlines, or scholarship eligibility rules were fabricated.
+
+Public source paths under https://www.dstmonroealumnae.org/: `projects-8`, `copy-of-economic-development`, `copy-2-of-economic-development`, `copy-of-international-awareness-inv`, `copy-2-of-international-awareness-inv`, `art-letters`, `scholarship`, `delta-dears`, `membership-services`, `contact`. The protected `sorors-only` destination was not accessed beyond its public response.
+
+### Navigation regression check
+
+With a local server running:
+
+```sh
+npm run check:navigation
+# Or point it at a production preview:
+npm run check:navigation -- http://127.0.0.1:3001
+```
+
+This checks 16 page responses, the Home/logo destination, every rendered local destination, same-tab internal links, an explicit external-host allowlist, all eleven compatibility redirects, contact links, and unknown-program 404 behavior. It fails on any rendered Wix navigation link. These checks passed against both development and the production preview. Browser checks also confirmed Programs → Education → Home → Back, mobile layouts without horizontal overflow at 390px, and switching from the tenth education photograph to the four-photo scholarship collection without retaining an invalid viewer index.
+
+Production compilation, TypeScript, and ESLint passed in a clean temporary copy with identical source and the same locked dependencies. The existing Next.js security advisory still requires an upgrade before deployment; the repeated build completes with the framework warning. Development-only Webpack caching now uses memory to avoid repeated ETIMEDOUT reads from the local disk cache; production cache configuration is unchanged.

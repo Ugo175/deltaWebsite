@@ -1,0 +1,117 @@
+[
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_b077c76fb85e435da967d0c51fadeee5~mv2.jpg",
+    "path": "public/images/programs/educational-01.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_3cfa19b99a5548c78440027f902fd3de~mv2.jpg",
+    "path": "public/images/programs/educational-02.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_c75831b666fd4f52b3e8ed3e4ac376b3~mv2.jpg",
+    "path": "public/images/programs/educational-03.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_5f497b871f894180a2e8865488382766~mv2.jpg",
+    "path": "public/images/programs/educational-04.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_bdf6be79014b452eaa0161e31ad940be~mv2.jpg",
+    "path": "public/images/programs/educational-05.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_3384adc6c0fc473a924313a936ccfea5~mv2.jpg",
+    "path": "public/images/programs/educational-06.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_0862f782bcaf4c34add603698cc681a2~mv2.jpg",
+    "path": "public/images/programs/educational-07.jpg"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_9af278376275440f815f0899785d2712~mv2.png",
+    "path": "public/images/programs/educational-08.png"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_6f19e30dee5141d7aa2c9c7119bbd9b0~mv2.png",
+    "path": "public/images/programs/educational-09.png"
+  },
+  {
+    "section": "educational",
+    "url": "https://static.wixstatic.com/media/b376c6_4853dc31cd284762959865b3c107f8bb~mv2.png",
+    "path": "public/images/programs/educational-10.png"
+  },
+  {
+    "section": "political",
+    "url": "https://static.wixstatic.com/media/b376c6_9507eec84b8a4129bd19a6af9cca8302~mv2.png",
+    "path": "public/images/programs/political-01.png"
+  },
+  {
+    "section": "scholarship",
+    "url": "https://static.wixstatic.com/media/b376c6_18392fba8716434f81b6d993ebfbefef~mv2.jpg",
+    "path": "public/images/programs/scholarship-01.jpg"
+  },
+  {
+    "section": "scholarship",
+    "url": "https://static.wixstatic.com/media/b376c6_eeab9ad1a4a94847808cd5a9395e058c~mv2.jpg",
+    "path": "public/images/programs/scholarship-02.jpg"
+  },
+  {
+    "section": "scholarship",
+    "url": "https://static.wixstatic.com/media/b376c6_ecaa5265a21b43be84e7326858324ed6~mv2.jpg",
+    "path": "public/images/programs/scholarship-03.jpg"
+  },
+  {
+    "section": "scholarship",
+    "url": "https://static.wixstatic.com/media/b376c6_52a7590e5f054740b92fb3304ba435aa~mv2.jpg",
+    "path": "public/images/programs/scholarship-04.jpg"
+  },
+  {
+    "section": "delta-dears",
+    "url": "https://static.wixstatic.com/media/b376c6_5ca118d3c9e148bc88c9c92857f7eb71~mv2.jpg",
+    "path": "public/images/programs/delta-dears-01.jpg"
+  },
+  {
+    "section": "delta-dears",
+    "url": "https://static.wixstatic.com/media/b376c6_ce648abc9ee54c868f5f6613b661b7ae~mv2.jpg",
+    "path": "public/images/programs/delta-dears-02.jpg"
+  },
+  {
+    "section": "delta-dears",
+    "url": "https://static.wixstatic.com/media/b376c6_a8236af013cf4b23a9291c8092dd340a~mv2.jpg",
+    "path": "public/images/programs/delta-dears-03.jpg"
+  },
+  {
+    "section": "membership-services",
+    "url": "https://static.wixstatic.com/media/b376c6_7ef1e5d734724a4cbda3fd1bfbf310a5~mv2.jpg",
+    "path": "public/images/programs/membership-services-01.jpg"
+  },
+  {
+    "section": "membership-services",
+    "url": "https://static.wixstatic.com/media/b376c6_32d790f2561849b1a5bc38a5688ec111~mv2.jpg",
+    "path": "public/images/programs/membership-services-02.jpg"
+  },
+  {
+    "section": "membership-services",
+    "url": "https://static.wixstatic.com/media/b376c6_0f534d39bb094932af0d5151096995d7~mv2.png",
+    "path": "public/images/programs/membership-services-03.png"
+  },
+  {
+    "section": "membership-services",
+    "url": "https://static.wixstatic.com/media/b376c6_28ecb407b9ca4805b0f087d92a02a250~mv2.png",
+    "path": "public/images/programs/membership-services-04.png"
+  },
+  {
+    "section": "membership-services",
+    "url": "https://static.wixstatic.com/media/b376c6_8b5fc224dbf44938a77840eb2e500234~mv2.png",
+    "path": "public/images/programs/membership-services-05.png"
+  }
+]

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
 
-// Keep the new chapter site available while pages are hosted elsewhere.
+// Chapter routes stay in this tab; external organizational/social resources open separately.
 export function SiteLink({ href, children, ...props }: ComponentProps<"a"> & { href: string }) {
   const external = /^https?:\/\//.test(href);
   const label = props["aria-label"];
